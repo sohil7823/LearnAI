@@ -41,7 +41,7 @@ function Protected() {
   if (!user) return <Navigate to="/login" replace />;
   const links = [['dashboard', 'Dashboard'], ['subjects', 'Subjects'], ['quizzes', 'Quizzes'], ['performance', 'Performance'], ['weak-topics', 'Weak Topics'], ['recommendations', 'Recommendations'], ['profile', 'Profile'], ['settings', 'Settings']];
   return <div className="app">
-    <aside className={'side' + (open ? ' open' : '')} onClick={() => setOpen(false)}><span className="logo">🎓 LearnAI</span>
+    <aside className={'side' + (open ? ' open' : '')} onClick={() => setOpen(false)}><span className="logo">🎓 LearnFlow</span>
       {links.map(([p, t]) => <NavLink key={p} to={'/' + p}>{t}</NavLink>)}<button onClick={() => { logout(); nav('/'); }}>Logout</button></aside>
     <div className="main"><header className="top"><span><button className="btn alt sm burger" onClick={() => setOpen(!open)}>☰</button> <b>{user.name}</b></span><button className="btn alt sm" onClick={() => setDark(!dark)}>{dark ? '☀ Light' : '🌙 Dark'}</button></header>
       <div className="content"><Outlet /></div></div></div>;

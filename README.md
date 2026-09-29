@@ -1,4 +1,4 @@
-# LearnAI – Personalized Learning Dashboard
+# LearnFlow – Personalized Learning Dashboard
 React + Vite, Node/Express, MongoDB (Mongoose), JWT auth (bcryptjs), Chart.js. Recommendations are **rule-based** (backend/utils/recommendationEngine.js), not an AI model.
 
 ## Run (two terminals)
